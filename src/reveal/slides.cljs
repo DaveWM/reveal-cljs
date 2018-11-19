@@ -1,25 +1,51 @@
 (ns reveal.slides)
 
-(def slide-1
+(def intro
   [:section
-   [:h1 "reveal-cljs"]
-   [:h3 "The ClojureScript-Wrapper for reveal.js"]
-   [:p "Based on "
-    [:a {:href "http://lab.hakim.se/reveal-js/"} "reveal.js"]]])
+   [:img {:src "https://my.datomic.com/img/logo-clean.png"}]
+   [:h1 "Datomic"]
+   [:p "5 reasons you should care"]])
 
-(def slide-2
+(def what-is-datomic?
   [:section
    [:section
-    [:h2 "Vertical Slides"]
-    [:p "Generate your slides "
-     [:a {:href "https://github.com/teropa/hiccups"} "with Hiccups"]]]
+    [:h2 "What is Datomic?"]]
    [:section
-    [:h2 "Tutorial"]
-    [:p "Watch the full tutorial of reveal.js "
-     [:a {:href "https://github.com/hakimel/reveal.js/blob/master/demo.html"} "on this site"]]]])
+    [:ul
+     [:li "Immutable"]
+     [:li "Datalog"]
+     [:li "Scalable Reads"]
+     [:li "Single Threaded Writes"]]]])
+
+(def history
+  [:section
+   [:h2 "History"]
+   [:ul
+    [:li "Auditing"]
+    [:li "Querying"]
+    [:li "Reproducability"]]])
+
+(def scalability
+  [:section
+   [:h2 "Scalability"]
+   [:ul
+    [:li "Batch Processes"]
+    [:li "Traffic spikes"]]])
+
+(def flexible-data-modelling
+  [:section
+   [:h2 "Flexible Data Model"]])
+
+(def better-query-language
+  [:section
+   [:h2 "A Better Query Language"]])
+
+(def )
 
 (defn all
   "Add here all slides you want to see in your presentation."
   []
-  [slide-1
-   slide-2])
+  [intro
+   what-is-datomic?
+   history
+   scalability])
