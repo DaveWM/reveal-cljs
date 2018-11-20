@@ -9,7 +9,8 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.9.946"]
                  [org.clojure/core.async "0.3.465" :exclusions [org.clojure/tools.reader]]
-                 [hiccups "0.3.0"]]
+                 [hiccups "0.3.0"]
+                 [zprint "0.4.12"]]
 
   :plugins [[lein-ancient "0.6.10"]
             [lein-figwheel "0.5.13"]

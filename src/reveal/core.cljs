@@ -12,7 +12,10 @@
                        :transition  "slide"                    ; e.g. none/fade/slide/convex/concave/zoom
                        :slideNumber false
                        :dependencies  [{:src "bower_components/reveal.js/plugin/notes/notes.js"
-                                        :async true}]}))
+                                        :async true}
+                                       {:src "bower_components/reveal.js/plugin/highlight/highlight.js"
+                                        :async true
+                                        :callback #(.initHighlightingOnLoad js/hljs)}]}))
 
 
 ;;;; You do not need to change anything below this comment
